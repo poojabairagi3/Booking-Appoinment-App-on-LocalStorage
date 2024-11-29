@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Information Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>User Information Form</h1>
+        <form id="myForm" action="">
+            <!-- Username Input -->
+            <div class="form-group">
+                <label for="name">Username:</label>
+                <input id="name" type="text" placeholder="Enter your username" required>
+            </div>
+
+            <!-- Email Input -->
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input id="email" type="email" placeholder="Enter your email" required>
+            </div>
+
+            <!-- Phone Number Input -->
+            <div class="form-group">
+                <label for="number">Phone Number:</label>
+                <input id="number" type="tel" placeholder="Enter your phone number" pattern="[0-9]{10}" required>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-group">
+                <button id="submitBtn" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    <ul id="listOfItems"></ul>
+    <script src="app.js"></script>
+</body>
+</html>
